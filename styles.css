@@ -1,0 +1,266 @@
+@font-face {
+  font-family: 'Calibri';
+  src: url('./fonts/Calibri-Light.woff2') format('woff2'),
+      url('./fonts/Calibri-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+html, body {
+  margin: 0px;
+  background-color: #daccc0;
+  height:100%;
+  min-height:100%;
+  font-family: 'Calibri';
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: #c97c6f;
+}
+
+.header-text {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.text {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 20px;  
+  width: 100%;
+}
+
+
+.header-text span {
+  font-size: 140px;
+}
+
+.header-text h3 {
+  font-size: 30px;
+  color: white;
+  margin: 10px;
+  letter-spacing: 10px;
+}
+
+.logo {
+  width: 40%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.como_llegar {
+  background-color: #daccc0;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.como_llegar h1{
+  font-family: 'Birthstone', cursive;
+  font-size: 100px !important;
+  font-weight: lighter;
+  color: #544540;
+  margin: 0px;
+  padding-top: 100px;
+}
+
+.como_llegar p {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 60px;
+  color: white;
+  padding: 40px;
+  margin: 0;
+}
+
+.como_llegar h3 {
+  font-family: 'Birthstone', cursive;
+  font-weight: lighter;
+  font-size: 80px;
+  color: #544540;
+  margin-bottom: 0;
+}
+
+.map {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.content {
+  position: relative;
+  z-index: 10;
+  background-color: #daccc0;
+  padding-bottom: 50px;
+}
+
+.fotos {
+  background-color: #daccc0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin: 50px;
+  padding-top: 50px;
+  border-top: solid white 1px;
+}
+
+.fotos img{
+  margin: 40px;
+  padding: 0;
+  width: 400px;
+  height: 400px;
+  object-fit: cover; 
+}
+
+.fotos h1 {
+  text-align: center;
+  width: 100%;
+  font-family: 'Birthstone', cursive;
+  font-weight: lighter;
+  font-size: 100px !important;
+  color: #544540;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.regalos {
+  background-color: #003644;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.regalos h1{
+  font-family: 'Birthstone', cursive;
+  font-size: 100px !important;
+  font-weight: lighter;
+  color: #c97c6f;
+  margin: 0px;
+  padding-top: 100px;
+}
+
+.regalos p {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 60px;
+  color: white;
+  padding: 40px;
+  margin: 0;
+}
+
+.regalos img{
+  width: 300px;
+  height: 300px;
+}
+.separator {
+  width: 90%;
+  margin-left: 5%;
+  border-top: 1px solid white;
+  margin-top: 50px;
+}
+.dresscode {
+  background-color: #003644;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.dresscode h1{
+  font-family: 'Birthstone', cursive;
+  font-size: 100px !important;
+  font-weight: lighter;
+  color: #c97c6f;
+  margin: 0px;
+  padding-top: 100px;
+}
+
+.dresscode img {
+  width: 90%;
+  margin: 10px;
+}
+
+.dresscode p{
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 60px;
+  color: white;
+  padding: 40px;
+  margin: 0;
+}
+
+.pandemia {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.pandemia h1 {
+  text-align: center;
+  font-family: 'Birthstone', cursive;
+  width: 100%;
+  font-size: 100px !important;
+  font-weight: lighter;
+  color: #544540;
+  margin-bottom: 10px;
+  margin-top: 60px;
+}
+
+.pandemia p {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 60px;
+  color: white;
+  padding: 40px;
+  margin: 0;
+}
+
+.pandemia img {
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-device-width: 768px) {
+  .text {
+    bottom: 200px;
+  }
+
+  .header-text h3 {
+    font-size: 60px;
+  }
+
+  .fotos img {
+    margin: 20px;
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .logo {
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
